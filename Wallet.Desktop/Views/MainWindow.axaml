@@ -1,0 +1,66 @@
+<Window x:Name="StartWindow" xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:Wallet.Desktop.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="350"
+        x:Class="Wallet.Desktop.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="Wallet.Desktop"
+        WindowStartupLocation="CenterScreen">
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+    
+    <Window.Styles>
+        <StyleInclude Source="../../ResourceDictioanaries/ResourceDictionary.axaml" />
+    </Window.Styles>
+
+    <StackPanel x:Name="MainPanel" HorizontalAlignment="Center" VerticalAlignment="Center">
+                
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+            <Label Classes="header" Content="Авторизация" HorizontalAlignment="Center" />
+        
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Center">
+                <Label x:Name="User"
+                       Content="Пользователь"
+                       Target="UserInput" />
+                <TextBox x:Name="UserInput"
+                         Text="{Binding UserName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Center">
+                <Label x:Name="Password"
+                       Content="Пароль"
+                       Target="PasswordInput" />
+                <TextBox x:Name="PasswordInput" PasswordChar="*"
+                         Text="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            </StackPanel>
+
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                <CheckBox x:Name="RememberMe" Content="Запомнить меня" IsChecked="{Binding IsChecked}" />
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Center">
+                <Button x:Name="ButtonEnter"
+                        Content="Войти"
+                        Command="{Binding CommandEnter}">
+                </Button>
+
+                <Button x:Name="ButtonClear"
+                        Content="Очистить"
+                        Command="{Binding CommandClear}">
+                </Button>
+            </StackPanel>
+        
+        </StackPanel>
+        
+    </StackPanel>
+
+</Window>

@@ -1,0 +1,8 @@
+﻿{
+  "ConnectionStrings": {
+    "GetAllTransactions": "http://localhost:5053/transactions",
+    "AddTransaction": "http://localhost:5053/transactions",
+    "GetAllAccounts": "http://localhost:5053/accounts",
+    "AddAccount": "http://localhost:5053/accounts"
+  }
+}

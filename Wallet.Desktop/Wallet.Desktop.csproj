@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
+        <ApplicationManifest>app.manifest</ApplicationManifest>
+        <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <AvaloniaResource Include="Assets\**"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Avalonia" Version="11.*"/>
+        <PackageReference Include="Avalonia.Desktop" Version="11.*"/>
+        <PackageReference Include="Avalonia.Themes.Fluent" Version="11.*"/>
+        <PackageReference Include="Avalonia.Fonts.Inter" Version="11.*"/>
+        <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
+        <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.*"/>
+        <PackageReference Include="Avalonia.ReactiveUI" Version="11.*"/>
+        <PackageReference Include="ReactiveUI.Fody" Version="19.5.41" />
+        <PackageReference Include="Avalonia.Controls.DataGrid" Version="11.*" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Cache\Cache.csproj" />
+      <ProjectReference Include="..\DesktopBL\DesktopBL.csproj" />
+      <ProjectReference Include="..\Wallet.Client.BL\Wallet.Client.BL.csproj" />
+      <ProjectReference Include="..\Wallet.Client.Login\Wallet.Client.Login.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Views\AppWindow.axaml.cs">
+        <DependentUpon>AppWindow.axaml</DependentUpon>
+      </Compile>
+    </ItemGroup>
+</Project>

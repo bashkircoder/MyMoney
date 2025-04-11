@@ -1,0 +1,16 @@
+D:\Wallet\Wallet.Client.Login\bin\Debug\net8.0\appsettings.json
+D:\Wallet\Wallet.Client.Login\bin\Debug\net8.0\Wallet.Client.Login.deps.json
+D:\Wallet\Wallet.Client.Login\bin\Debug\net8.0\Wallet.Client.Login.dll
+D:\Wallet\Wallet.Client.Login\bin\Debug\net8.0\Wallet.Client.Login.pdb
+D:\Wallet\Wallet.Client.Login\obj\Debug\net8.0\Wallet.Client.Login.csproj.AssemblyReference.cache
+D:\Wallet\Wallet.Client.Login\obj\Debug\net8.0\Wallet.Client.Login.GeneratedMSBuildEditorConfig.editorconfig
+D:\Wallet\Wallet.Client.Login\obj\Debug\net8.0\Wallet.Client.Login.AssemblyInfoInputs.cache
+D:\Wallet\Wallet.Client.Login\obj\Debug\net8.0\Wallet.Client.Login.AssemblyInfo.cs
+D:\Wallet\Wallet.Client.Login\obj\Debug\net8.0\Wallet.Client.Login.csproj.CoreCompileInputs.cache
+D:\Wallet\Wallet.Client.Login\obj\Debug\net8.0\Wallet.Client.Login.dll
+D:\Wallet\Wallet.Client.Login\obj\Debug\net8.0\refint\Wallet.Client.Login.dll
+D:\Wallet\Wallet.Client.Login\obj\Debug\net8.0\Wallet.Client.Login.pdb
+D:\Wallet\Wallet.Client.Login\obj\Debug\net8.0\ref\Wallet.Client.Login.dll
+D:\Wallet\Wallet.Client.Login\bin\Debug\net8.0\Wallet.Model.dll
+D:\Wallet\Wallet.Client.Login\bin\Debug\net8.0\Wallet.Model.pdb
+D:\Wallet\Wallet.Client.Login\obj\Debug\net8.0\Wallet.C.788719D6.Up2Date

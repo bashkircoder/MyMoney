@@ -1,0 +1,16 @@
+D:\Wallet\Cache\bin\Debug\net8.0\usercache.json
+D:\Wallet\Cache\bin\Debug\net8.0\Cache.deps.json
+D:\Wallet\Cache\bin\Debug\net8.0\Cache.dll
+D:\Wallet\Cache\bin\Debug\net8.0\Cache.pdb
+D:\Wallet\Cache\obj\Debug\net8.0\Cache.csproj.AssemblyReference.cache
+D:\Wallet\Cache\obj\Debug\net8.0\Cache.GeneratedMSBuildEditorConfig.editorconfig
+D:\Wallet\Cache\obj\Debug\net8.0\Cache.AssemblyInfoInputs.cache
+D:\Wallet\Cache\obj\Debug\net8.0\Cache.AssemblyInfo.cs
+D:\Wallet\Cache\obj\Debug\net8.0\Cache.csproj.CoreCompileInputs.cache
+D:\Wallet\Cache\obj\Debug\net8.0\Cache.dll
+D:\Wallet\Cache\obj\Debug\net8.0\refint\Cache.dll
+D:\Wallet\Cache\obj\Debug\net8.0\Cache.pdb
+D:\Wallet\Cache\obj\Debug\net8.0\ref\Cache.dll
+D:\Wallet\Cache\bin\Debug\net8.0\Wallet.Model.dll
+D:\Wallet\Cache\bin\Debug\net8.0\Wallet.Model.pdb
+D:\Wallet\Cache\obj\Debug\net8.0\Cache.csproj.Up2Date

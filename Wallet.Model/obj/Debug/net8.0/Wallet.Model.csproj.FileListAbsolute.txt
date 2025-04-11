@@ -1,0 +1,12 @@
+D:\Wallet\Wallet.Model\bin\Debug\net8.0\Wallet.Model.deps.json
+D:\Wallet\Wallet.Model\bin\Debug\net8.0\Wallet.Model.dll
+D:\Wallet\Wallet.Model\bin\Debug\net8.0\Wallet.Model.pdb
+D:\Wallet\Wallet.Model\obj\Debug\net8.0\Wallet.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\Wallet\Wallet.Model\obj\Debug\net8.0\Wallet.Model.AssemblyInfoInputs.cache
+D:\Wallet\Wallet.Model\obj\Debug\net8.0\Wallet.Model.AssemblyInfo.cs
+D:\Wallet\Wallet.Model\obj\Debug\net8.0\Wallet.Model.csproj.CoreCompileInputs.cache
+D:\Wallet\Wallet.Model\obj\Debug\net8.0\Wallet.Model.dll
+D:\Wallet\Wallet.Model\obj\Debug\net8.0\refint\Wallet.Model.dll
+D:\Wallet\Wallet.Model\obj\Debug\net8.0\Wallet.Model.pdb
+D:\Wallet\Wallet.Model\obj\Debug\net8.0\ref\Wallet.Model.dll
+D:\Wallet\Wallet.Model\obj\Debug\net8.0\Wallet.Model.csproj.AssemblyReference.cache

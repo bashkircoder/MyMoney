@@ -1,0 +1,21 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:Wallet.Desktop.ViewModels.PagesViewModels"
+
+             x:Class="Wallet.Desktop.Views.Pages.SupportPage"
+             x:DataType="vm:SupportPageViewModel">
+    
+    <StackPanel Orientation="Horizontal">
+        
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            
+            <Label Content="Поддержка"/>
+            
+        </StackPanel>
+        
+    </StackPanel>
+   
+    
+    
+    
+</UserControl>

@@ -1,0 +1,16 @@
+D:\Wallet\Wallet.Client.DAL\bin\Debug\net8.0\Wallet.Client.DAL.deps.json
+D:\Wallet\Wallet.Client.DAL\bin\Debug\net8.0\Wallet.Client.DAL.dll
+D:\Wallet\Wallet.Client.DAL\bin\Debug\net8.0\Wallet.Client.DAL.pdb
+D:\Wallet\Wallet.Client.DAL\bin\Debug\net8.0\Wallet.Model.dll
+D:\Wallet\Wallet.Client.DAL\bin\Debug\net8.0\Wallet.Model.pdb
+D:\Wallet\Wallet.Client.DAL\obj\Debug\net8.0\Wallet.Client.DAL.csproj.AssemblyReference.cache
+D:\Wallet\Wallet.Client.DAL\obj\Debug\net8.0\Wallet.Client.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Wallet\Wallet.Client.DAL\obj\Debug\net8.0\Wallet.Client.DAL.AssemblyInfoInputs.cache
+D:\Wallet\Wallet.Client.DAL\obj\Debug\net8.0\Wallet.Client.DAL.AssemblyInfo.cs
+D:\Wallet\Wallet.Client.DAL\obj\Debug\net8.0\Wallet.Client.DAL.csproj.CoreCompileInputs.cache
+D:\Wallet\Wallet.Client.DAL\obj\Debug\net8.0\Wallet.C.9EF3F7AE.Up2Date
+D:\Wallet\Wallet.Client.DAL\obj\Debug\net8.0\Wallet.Client.DAL.dll
+D:\Wallet\Wallet.Client.DAL\obj\Debug\net8.0\refint\Wallet.Client.DAL.dll
+D:\Wallet\Wallet.Client.DAL\obj\Debug\net8.0\Wallet.Client.DAL.pdb
+D:\Wallet\Wallet.Client.DAL\obj\Debug\net8.0\ref\Wallet.Client.DAL.dll
+D:\Wallet\Wallet.Client.DAL\bin\Debug\net8.0\httpsettings.json

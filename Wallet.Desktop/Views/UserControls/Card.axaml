@@ -1,0 +1,26 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:Wallet.Desktop.ViewModels.UserControlsViewModels"
+
+             x:Class="Wallet.Desktop.Views.UserControls.Card"
+             x:DataType="vm:CardViewModel">
+    
+    <StackPanel Orientation="Vertical" HorizontalAlignment="Left">
+            <Border CornerRadius="6"
+                    Width="200" 
+                    Height="120" 
+                    BorderThickness="4"
+                    BorderBrush="Green"
+                    Margin="15, 15, 15, 5">
+                    
+                    <Image x:Name="Image" Stretch="Fill"/>
+                    
+            </Border>
+           
+            <TextBlock x:Name="Account"/>
+            <TextBlock x:Name="Balance"/>
+            
+    </StackPanel>
+   
+    
+</UserControl>

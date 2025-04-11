@@ -1,0 +1,69 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:Wallet.Desktop.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="650"
+        x:Class="Wallet.Desktop.Views.AppWindow"
+        x:DataType="vm:AppWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="Wallet" WindowStartupLocation="CenterScreen">
+
+    <Window.DataContext>
+        <vm:AppWindowViewModel/>
+    </Window.DataContext>
+    
+    <Window.Styles>
+        <StyleInclude Source="../../ResourceDictioanaries/ResourceDictionary.axaml" />
+    </Window.Styles>
+
+    <SplitView DisplayMode="CompactInline" CompactPaneLength="100">
+        <SplitView.Pane>
+            <DockPanel LastChildFill="True">
+              <StackPanel Orientation="Vertical" 
+                          HorizontalAlignment="Center"
+                          DockPanel.Dock="Top">
+                  
+                  <Button x:Name="MainPageButton" Classes="splitbutton"
+                         Command="{Binding CommandMainPage}">
+                          <Image Source="{Binding SelectedBitmapMainPage}"
+                                 Stretch="Uniform"/>
+                  </Button>
+                  
+                  <Button x:Name="HistoryPageButton" Classes="splitbutton"
+                          Command="{Binding CommandHistoryPage}">
+                      <Image Source="{Binding SelectedBitmapHistoryPage}"
+                             Stretch="Uniform"/>
+                  </Button>
+                  
+                  <Button x:Name="PaymentPageButton" Classes="splitbutton"
+                          Command="{Binding CommandPaymentPage}">
+                      <Image Source="{Binding SelectedBitmapPaymentPage}"
+                             Stretch="Uniform"/>
+                  </Button>
+                  
+              </StackPanel>  
+                
+                <StackPanel Orientation="Vertical" 
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Bottom"
+                            DockPanel.Dock="Bottom">
+                    <Button x:Name="SupportPageButton" Classes="splitbutton"
+                            Command="{Binding CommandSupportPage}">
+                        <Image Source="{Binding SelectedBitmapSupportPage}"
+                               Stretch="Uniform"/>
+                    </Button>
+                </StackPanel>
+                
+            </DockPanel>
+        </SplitView.Pane>
+
+        <StackPanel>
+            <ContentControl>
+                <ContentPresenter Content="{Binding SelectedPage}"/>
+            </ContentControl>
+        </StackPanel>
+    
+    </SplitView>
+    
+</Window>

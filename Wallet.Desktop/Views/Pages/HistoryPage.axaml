@@ -1,0 +1,73 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:Wallet.Desktop.ViewModels.PagesViewModels"
+             xmlns:m="clr-namespace:Wallet.Model;assembly=Wallet.Model"
+
+             x:Class="Wallet.Desktop.Views.Pages.HistoryPage"
+             x:DataType="vm:HistoryPageViewModel">
+
+    <UserControl.Styles>
+        <StyleInclude Source="../../ResourceDictioanaries/ResourceDictionary.axaml" />
+    </UserControl.Styles>
+
+    <UserControl.DataContext>
+        <vm:HistoryPageViewModel />
+    </UserControl.DataContext>
+    
+    <Design.DataContext>
+        <vm:HistoryPageViewModel/>
+    </Design.DataContext>
+
+    <StackPanel Orientation="Vertical">
+        
+        <StackPanel Orientation="Horizontal">
+            
+            <StackPanel Orientation="Vertical">
+                <Label Content="Период"/>
+                <StackPanel Orientation="Horizontal">
+                    <DatePicker SelectedDate="{Binding BeginDate, StringFormat=dd.MM.yyyy, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged }"/>
+                    <DatePicker SelectedDate="{Binding EndDate,StringFormat=dd.MM.yyyy}"/>
+                </StackPanel>
+            </StackPanel>
+            
+            <StackPanel Orientation="Vertical">
+                <Label Content="Счет"/>
+                <ComboBox ItemsSource="{Binding Accounts}"
+                          SelectedItem="{Binding Account, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            </StackPanel>
+            
+            <StackPanel Orientation="Vertical">
+                <Label Content="Получатель"/>
+                <TextBox Text="{Binding Recipient, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            </StackPanel>
+            
+            <StackPanel Orientation="Vertical">
+                <Label Content="Тип платежа"/>
+                <ComboBox ItemsSource="{Binding Types}"
+                          SelectedItem="{Binding Type, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            </StackPanel>
+            
+        </StackPanel>
+        
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Left">
+            <DataGrid Width="1100" Height="350" ItemsSource="{Binding Transactions}"
+                      IsReadOnly="True"
+                      GridLinesVisibility="Horizontal"
+                      BorderThickness="1" Classes="gridheader" VerticalScrollBarVisibility="Auto">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Width="120" Header="Дата" Binding="{Binding Date}" FontStretch="Expanded"/>
+                    <DataGridTextColumn Width="130" Header="Вх./Исх." Binding="{Binding Direction}"/>
+                    <DataGridTextColumn Width="150" Header="Банк" Binding="{Binding BankName}"/>
+                    <DataGridTextColumn Width="*" Header="Номер карты" Binding="{Binding AccountNumber}"/>
+                    <DataGridTextColumn Width="*" Header="Получатель" Binding="{Binding Recipient}"/>
+                    <DataGridTextColumn Width="*" Header="Тип" Binding="{Binding TransactionType}"/>
+                    <DataGridTextColumn Width="*" Header="Сумма" Binding="{Binding Amount}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+        
+    </StackPanel>
+    
+
+
+</UserControl>

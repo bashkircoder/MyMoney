@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "5pujumi2dJE9pgNS9Gzyc8fQLoSHwjd3oxRjByQwKS0=",
+  "Source": "WalletWeb.API",
+  "BasePath": "_content/WalletWeb.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
